@@ -5,10 +5,12 @@ The lower panel is created with Linear Layout where three buttons are created as
 2. **OPACITY** button is used to change the brush stroke opacity
 3. **BRUSH SIZE** button can reduce or increase the brush size.
 <br/>
-**Modification in IA09 II**<br/>
-The new added features are:<br/>
-1. **SAVE THE IMAGE** This button saves the image in the folder.
-2. **LOAD THE IMAGE** The image is loaded as the canvas from the folder, and we can edit and save the loaded image.
+**Modification in IA09 II**
+<br/>
+The new added features are:
+<br/>
+1. **SAVE THE IMAGE** This button saves the image in the folder. <br/>
+2. **LOAD THE IMAGE** The image is loaded as the canvas from the folder, and we can edit and save the loaded image. <br/>
 
 It is built using two Kotlin files:<br/>
 1. **MainActivity.kt:**
