@@ -67,33 +67,63 @@
         <!-- Erase Button -->
         <Button
             android:id="@+id/eraseButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
             android:background="@drawable/rounded_button"
-            android:text="@string/erase"
+            android:layout_weight="1"
+            android:text="Erase"
+            android:textSize="10sp"
             android:textColor="@color/white"
-            android:backgroundTint="@color/purple_200" />
+            android:backgroundTint="@color/purple_500" />
 
-        <!-- Opacity Button -->
         <Button
             android:id="@+id/opacityButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
             android:background="@drawable/rounded_button"
-            android:text="@string/opacity"
-            android:layout_marginStart="16dp"
+            android:text="Opacity"
+            android:textSize="10sp"
+            android:layout_marginStart="8dp"
             android:textColor="@color/white"
-            android:backgroundTint="@color/purple_200" />
+            android:backgroundTint="@color/purple_500" />
 
-        <!-- Brush Size Button -->
         <Button
             android:id="@+id/brushSizeButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
             android:background="@drawable/rounded_button"
-            android:text="@string/brush_size"
-            android:layout_marginStart="16dp"
+            android:text="Brush Size"
+            android:textSize="10sp"
+            android:layout_marginStart="8dp"
             android:textColor="@color/white"
-            android:backgroundTint="@color/purple_200" />
+            android:backgroundTint="@color/purple_500" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+            android:text="Save"
+            android:textSize="10sp"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/purple_500" />
+
+        <Button
+            android:id="@+id/loadButton"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+            android:text="Load"
+            android:textSize="10sp"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/purple_500" />
+
     </LinearLayout>
+
 </RelativeLayout>
