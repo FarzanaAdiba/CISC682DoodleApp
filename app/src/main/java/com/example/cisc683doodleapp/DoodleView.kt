@@ -1,6 +1,7 @@
 package com.example.cisc683doodleapp
 
 import android.content.Context
+import android.graphics.Bitmap
 import android.graphics.Canvas
 import android.graphics.Color
 import android.graphics.Paint
@@ -22,6 +23,7 @@ class DoodleView : View {
         var currentBrush=Color.BLACK;
 
     }
+    private var loadedBitmap: Bitmap? = null
     constructor(context: Context) : this(context, null){
         init()
     }
@@ -65,11 +67,41 @@ class DoodleView : View {
     }
 
     override fun onDraw(canvas: Canvas) {
+        // Draw the loaded bitmap first (if present)
+        loadedBitmap?.let {
+            canvas.drawBitmap(it, 0f, 0f, null)
+        }
         for(i in pathList.indices){
             paintBrush.color=colorList[i]
             canvas.drawPath(pathList[i],paintBrush)
         }
         invalidate()
     }
+    // Method to capture the current canvas as a bitmap
+    fun getBitmap(): Bitmap {
+        // Create a blank bitmap with the same dimensions as the view
+        val bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888)
+        val canvas = Canvas(bitmap)
+
+        // Draw the background (optional - can be white or transparent)
+        canvas.drawColor(Color.WHITE)
+
+        // Draw all the paths stored in pathList
+        for (i in pathList.indices) {
+            paintBrush.color = colorList[i]
+            canvas.drawPath(pathList[i], paintBrush)
+        }
+
+        return bitmap
+    }
+    // Method to set a loaded bitmap and refresh the view
+    fun setBitmap(bitmap: Bitmap) {
+        loadedBitmap = bitmap // Store the loaded bitmap
+        pathList.clear() // Clear existing paths
+        colorList.clear()
+        invalidate() // Redraw the view
+    }
+
+
 
 }
