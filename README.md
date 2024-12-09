@@ -5,8 +5,8 @@ The lower panel is created with Linear Layout where three buttons are created as
 2. **OPACITY** button is used to change the brush stroke opacity
 3. **BRUSH SIZE** button can reduce or increase the brush size.
 <br/>
-**Modification in IA09 II**
-The new added features are:
+**Modification in IA09 II**<br/>
+The new added features are:<br/>
 1. **SAVE THE IMAGE** This button saves the image in the folder.
 2. **LOAD THE IMAGE** The image is loaded as the canvas from the folder, and we can edit and save the loaded image.
 
@@ -17,9 +17,9 @@ It is built using two Kotlin files:<br/>
    *showOpacityDialog()* function is used to adjust the opacity when the user clicks the *OPACITY* button at the bottom toolbar. <br/>
    *showBrushSizeDialog()* function is used to adjust the brush size when the user clicks the *BRUSH SIZE* button at the bottom toolbar. <br/>
 
-   **IA09 II Modification**
-   *saveCanvasToStorage()* function is used for saving the picture in .png format.
-   *loadCanvasFromImage()* is used to load any saved picture for further modifications.
+   **IA09 II Modification** <br/>
+   *saveCanvasToStorage()* function is used for saving the picture in .png format.<br/>
+   *loadCanvasFromImage()* is used to load any saved picture for further modifications.<br/>
 3. **DoodleView.kt:**
    This activity is to handle all the logic for painting on canvas.<br/>
    *MotionEvent* is a class that controls the touch event (UP/DOWN) or the coordinates(x or y) while any *onTouchEvent()* function is called. <br/>
@@ -30,13 +30,11 @@ It is built using two Kotlin files:<br/>
    2. **seekbar_view.xml:** The seek bar for changing opacity and brush is designed in this layout. The sizes can be adjusted using the Seekbar widget.<br/>
   Apart from that, I also modified the **color.xml** and **strings.xml** files and built some resource files under the **Drawable** folder. 
   <br/><br/>
-
 **References:**
   1. Create a Simple Paint Application in Android using Kotlin | GeeksforGeeks, Link: https://www.youtube.com/watch?v=8mjv_iDSLcw
   2. Relative Layout. Android Developers. https://developer.android.com/develop/ui/views/layout/relative#Example
   3. How to use LinearLayout in Kotlin. Link: https://www.youtube.com/watch?v=3Mx4gzWI2Rk
      <br/>
 **App Demo Video** <br/>
-Version 1:https://youtu.be/CsbBoqx_qgE
-<br/>
+Version 1:https://youtu.be/CsbBoqx_qgE 
 Version 2: https://youtu.be/mqe_2EKEvBQ
