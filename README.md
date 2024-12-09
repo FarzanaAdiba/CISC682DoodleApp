@@ -35,7 +35,8 @@ It is built using two Kotlin files:<br/>
   1. Create a Simple Paint Application in Android using Kotlin | GeeksforGeeks, Link: https://www.youtube.com/watch?v=8mjv_iDSLcw
   2. Relative Layout. Android Developers. https://developer.android.com/develop/ui/views/layout/relative#Example
   3. How to use LinearLayout in Kotlin. Link: https://www.youtube.com/watch?v=3Mx4gzWI2Rk
-**App Demo Video**
+     <br/>
+**App Demo Video** <br/>
 Version 1:https://youtu.be/CsbBoqx_qgE
 <br/>
 Version 2: https://youtu.be/mqe_2EKEvBQ
